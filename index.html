@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portal de trámites</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main class="contenedor-principal">
+            <h1 class="titulo-oficial"> Registro de Atención Ciudadana </h1>
+            <p>Complete el siguiente formulario para procesar su solicitud en nuestro sistema.</p>
+            <form action="#">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ej. Brenda López Espinosa">
+
+                 <button type="submit" class="btn-enviar">Procesar Solicitud</button>
+                 
+                 {% comment %}
+                    button:submit.btn-enviar - al poner esta instrucción y dar enter se crea en automático el botón
+                    cuando se colocan los dos puntos se establece el tipo de botón y después la clase que 
+                    se delimita con el .btn-enviar
+                 {% endcomment %}
+                    
+            </form>
+        </main>
+    </body>
+
+
+</html>
